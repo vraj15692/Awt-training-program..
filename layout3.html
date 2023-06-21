@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT 1</title>
+</head>
+<style type="text/css">
+    * {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #r1 {
+        width: 98%;
+        padding-left: 2%;
+        height: 50px;
+        padding-top: 20px;
+        background-color: gray;
+        margin-bottom: 10px;
+    }
+
+    #r2 {
+        width: 100%;
+        height: 800px;
+    }
+
+    #r2c1,#r2c2 {
+        height: 800px;
+        float: left;
+    }
+
+    #r2c1{width: 30%;}
+    #r2c2{width: 70%;}
+
+    #r2c2r1 {
+        height: 160px;
+        padding-top: 130px;
+        background-color: gray;
+        text-align: center;
+    }
+
+    #r2c2r2 {
+        background-color: gray;
+        height: 270px;
+        padding-top: 230px;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #r5 {
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        background-color: gray;
+        text-align: center;
+        margin-top: 5%;
+    }
+</style>
+<body>
+
+    <div id="r1">
+        Logo
+    </div>
+    <div id="r2">
+        <div id="r2c1">
+            Side bar Navigation
+        </div>
+        <div id="r2c2">
+            <div id="r2c2r1">header/Banner</div>
+            <div id="r2c2r2">Body Area</div>
+        </div>
+    </div>
+    <div id="r5">
+        Footer
+    </div>
+</body>
+</html>
