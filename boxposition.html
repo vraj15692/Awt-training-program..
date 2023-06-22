@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Position Tut</title>
+</head>
+<style>
+    .box{
+        border: 6px solid aqua;
+        display: inline-block;
+        width:200px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    #Box2,#Box4{
+        position: relative;
+        top: 20px;
+        left: 5px;
+        background-color: blueviolet;
+    }
+
+    #Box1,#Box3{
+        position: relative;
+        top:40px;
+        right: 2px;
+        }
+
+        #Box3{
+            position: relative;
+            left:5px;
+        }
+
+        .container{
+            /* position: absolute; */
+            border: 1px solid rgb(216, 40, 40);
+            height: 3444px;
+            width: 3444px;
+            /* right:900px; */
+        }
+
+        #Box1,#Box3,#Box5{
+            position: relative;
+            background-color: dodgerblue; 
+            border: 6px solid aquamarine;
+            height:200px;
+            width: 200px;
+            top:60px;
+        }
+</style>
+<body>
+    <div class="container" >
+    <div class="box" id="Box1"></div>
+    <div class="box" id="Box2"></div> 
+    <div class="box" id="Box3"></div>  
+    <div class="box" id="Box4"></div>
+    <div class="box" id="Box5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Ex-2</title>
+</head>
+<style>
+    .box{
+        border:2px solid black;
+        height: 200px;
+        width:200px;
+    }
+
+    #Box1{
+        top:33px;
+        position: relative;
+        background-color: green;
+        z-index: 1;
+    }
+    #Box2{
+        top: 66px;
+        position: relative;
+        background-color: rebeccapurple;
+         /* visibility: hidden;  [Will show its empty space]*/
+        /* display: none; [will not show empty space]*/
+        z-index: 0;
+    }    
+    #Box3{
+        /* position: relative; */
+        /* z-index: 2; */
+        background-color: darksalmon;
+        /* bottom: 200px; */
+    } 
+       #Box4{
+        background-color: darkorange;
+    } 
+</style>
+<body>
+    <div class="box" id="Box1"></div>
+    <div class="box" id="Box2"></div>
+    <div class="box" id="Box3"></div>
+    <div class="box" id="Box4"></div>
+</body>
+</html>
