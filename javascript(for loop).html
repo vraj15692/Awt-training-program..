@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable</title>
+</head>
+<body>
+   <p id="sub"></p>
+   <script>
+    const subject=["react","node","angular"];
+
+    let text="";
+    // for(x in subject) {
+    //     text+=subject[x]+"<br>";
+    // }
+
+    for(let x of subject) {
+        text+=x+"<br>";
+    }
+    document.getElementById("sub").innerHTML=text;
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#img {
+  width:100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: seagreen;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<p>Click the below  button to  hide & show the image element:</p>
+
+<button onclick="myFunction()">Click to Hide It!</button>
+
+<div id="img">
+<h3>This is Nature.</h3>
+<img src="https://tse2.mm.bing.net/th?id=OIP.Op8CEP99HoMDn_I3yBusrgHaEI&pid=Api&P=0&h=180" height="50%" width="50%">
+</div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("img");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
