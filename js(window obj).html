@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Window example</title>
+
+
+    
+    <script>
+        function alertDialog() {
+            alert("This is alert dialog");
+        }
+
+        function confirmDialog() {
+            var v=confirm("Are you sure?");
+            if (v==true) {
+                document.getElementById("confirmResult").innerText="ok";
+            }
+            else {
+                document.getElementById("confirmResult").innerText="cancel";
+            }
+        }
+
+        function promptDialog() {
+            var v=prompt("Whon are you?");
+            document.getElementById("promptResult").innerText=v;
+        }
+        function openWindow() {
+            open("https://youtube.com/");
+        }
+        function closeWindow() {
+            this.close();
+        }
+    </script>
+    </head>
+<body>
+    <button type="button" onclick="alertDialog()">Alert Dialog.</button>
+    <br/>
+    <button type="button" onclick="confirmDialog()">confirm Dialog.</button>
+    <p>Confirm result:<span id="confirmResult"></span></p>    
+<br/>
+
+<button type="button" onclick="promptDialog()">prompt Dialog.</button>
+
+<p>Prompt Result:<span id="promptResult"></span></p>
+<br/>
+
+<button type="button" onclick="openWindow()">open Window.</button>
+<br/><br/>
+
+<button type="button" onclick="closeWindow()">close Window.</button>
+
+</body>
+</html>
