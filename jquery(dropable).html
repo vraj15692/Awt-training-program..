@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Droppable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable {float: left; margin: 10px 10px 10px 0; }
+  #droppable {float: left; margin: 10px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "h1" )
+            .html( "DUMPED!" );
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <img src="/ptflphoto.png" style="width: 150px;">
+</div>
+ 
+<div id="droppable" class="ui-widget-header">
+  <img src="https://cdn3.iconfinder.com/data/icons/user-interface-93/145/4-512.png" alt="dustbin" style="width: 300px;height: 300px;">
+  <p><h1>throw waste in me</h1></p>
+</div>
+ 
+ 
+</body>
+</html>

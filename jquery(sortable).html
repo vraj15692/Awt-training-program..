@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+  } );
+  </script>
+</head>
+<body>
+ 
+<ul id="sortable">
+    <h3>Sort According to your favourite Car!</h3>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Volvo</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> BMW</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Mercedes</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Mustang</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Supra </li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Fronx</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span> Bentley</li>
+</ul>
+ 
+ 
+</body>
+</html>
